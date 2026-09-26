@@ -1,0 +1,61 @@
+# ============================================================
+# XplainAI – Root .gitignore
+# ============================================================
+
+# ── Notebooks (contain API keys in outputs) ─────────────────
+notebooks/
+backend/backend.ipynb
+
+
+.env
+.env.*
+!.env.example
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── SQLite databases ─────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Uploaded files ───────────────────────────────────────────
+backend/uploads/
+
+# ── Jupyter Notebook checkpoints ────────────────────────────
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ── Node / Frontend ──────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+
+# ── OS / IDE ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ── FAISS / ML artifacts ─────────────────────────────────────
+*.faiss
+*.pkl
+*.bin
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
